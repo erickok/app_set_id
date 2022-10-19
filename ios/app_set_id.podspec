@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'app_set_id'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Tiny Flutter plugin to retrieve the Identifier for Vendor (IDfV)'
   s.description      = <<-DESC
 A new Flutter plugin project.
