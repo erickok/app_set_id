@@ -4,7 +4,9 @@ import 'package:app_set_id/app_set_id_platform_interface.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
-class MockAppSetIdPlatform with MockPlatformInterfaceMixin implements AppSetIdPlatform {
+class MockAppSetIdPlatform
+    with MockPlatformInterfaceMixin
+    implements AppSetIdPlatform {
   @override
   Future<String> getIdentifier() => Future.value('42');
 }

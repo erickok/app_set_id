@@ -1,5 +1,7 @@
 # app_set_id
 
+[![pub package](https://img.shields.io/pub/v/app_set_id.svg)](https://pub.dev/packages/app_set_id)
+
 A tiny Flutter library to retrieve a vendor-specific privacy-friendly device-unique identifier, also called IDfV or App Set ID.
 
 ### Android

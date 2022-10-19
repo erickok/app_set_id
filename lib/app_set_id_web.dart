@@ -16,6 +16,8 @@ class AppSetIdWeb extends AppSetIdPlatform {
     AppSetIdPlatform.instance = AppSetIdWeb();
   }
 
+  /// Returns a [String] containing (on web) the browser user agent, as no
+  /// real device identifier exists.
   @override
   Future<String?> getIdentifier() async {
     final version = html.window.navigator.userAgent;

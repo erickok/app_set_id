@@ -16,6 +16,8 @@ abstract class AppSetIdPlatform extends PlatformInterface {
     _instance = instance;
   }
 
+  /// Returns a [String] containing a device identifier that is unique per
+  /// vendor.
   Future<String?> getIdentifier() {
     throw UnimplementedError('getIdentifier() has not been implemented.');
   }
