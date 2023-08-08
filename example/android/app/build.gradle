@@ -55,6 +55,7 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    namespace 'nl.u2312.app_set_id_example'
 }
 
 flutter {
