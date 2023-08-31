@@ -1,6 +1,6 @@
 name: app_set_id
 description: Tiny Flutter plugin to retrieve the App Set ID (Android) or Identifier for Vendor (IDfV, iOS)
-version: 1.0.0
+version: 1.1.0
 homepage: https://github.com/erickok/app_set_id
 
 environment:
