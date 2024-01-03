@@ -16,6 +16,10 @@ On iOS/iPadOS it returns the Identifier for Vendor (IDfV). as per [the developer
 
 > The value of this property is the same for apps that come from the same vendor running on the same device. (...) Normally, the vendor is determined by data provided by the App Store.
 
+### MacOS
+
+No true IDfV exists on MacOS, so it returns the MAC address of the first network interface (in hexadecimal format, without separators). This is not a real IDfV, but Apple recommends using it as a fallback in [the developer documentation](https://developer.apple.com/documentation/appstorereceipts/validating_receipts_on_the_device#//apple_ref/doc/uid/TP40010573-CH1-SW14), even in the context of validating purchases.
+
 ### Web
 
 For ease of integration in web projects, on web it returns the browser user agent. This is NOT a good identifier and only here for development purposes.
@@ -26,7 +30,7 @@ Add to your pubspec.yaml file:
 
 ```yaml
 dependencies:
-  app_set_id: ^1.0.0
+  app_set_id: ^1.2.0
 ```
 
 Import the library and call `getIdentifer`:

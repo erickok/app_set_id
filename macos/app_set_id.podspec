@@ -10,11 +10,10 @@ A tiny Flutter library to retrieve a vendor-specific privacy-friendly device-uni
   s.author           = { 'Eric Kok' => 'eric@2312.nl' }
 
   s.source           = { :path => '.' }
-  s.source_files = 'Classes/**/*'
-  s.dependency 'Flutter'
-  s.platform = :ios, '9.0'
+  s.source_files     = 'Classes/**/*'
+  s.dependency 'FlutterMacOS'
 
-  # Flutter.framework does not contain a i386 slice.
-  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'i386' }
+  s.platform = :osx, '10.11'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.swift_version = '5.0'
 end

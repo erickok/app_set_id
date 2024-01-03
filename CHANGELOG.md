@@ -1,4 +1,9 @@
+## 1.2.0
+
+* Added support for MacOS (which returns the primary MAC address)
+
 ## 1.1.0
+
 * Upgraded Gradle to 8.0
 
 ## 1.0.0
