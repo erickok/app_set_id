@@ -1,3 +1,7 @@
+## 1.2.1
+
+* Align version number between Flutter package and native code
+
 ## 1.2.0
 
 * Added support for MacOS (which returns the primary MAC address)

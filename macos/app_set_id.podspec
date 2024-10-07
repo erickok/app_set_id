@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'app_set_id'
-  s.version          = '1.2.0'
+  s.version          = '1.2.1'
   s.summary          = 'Tiny Flutter plugin to retrieve the Identifier for Vendor (IDfV)'
   s.description      = <<-DESC
 A tiny Flutter library to retrieve a vendor-specific privacy-friendly device-unique identifier, also called IDfV or App Set ID.
