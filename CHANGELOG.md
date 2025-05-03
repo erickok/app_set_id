@@ -1,3 +1,6 @@
+## 1.3.0
+* Upgrade Android Gradle plugin and use declarative plugin application
+
 ## 1.2.1
 
 * Align version number between Flutter package and native code
