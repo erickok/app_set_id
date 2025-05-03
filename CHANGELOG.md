@@ -1,5 +1,6 @@
 ## 1.3.0
 * Upgrade Android Gradle plugin and use declarative plugin application
+* Web WASM compilation support
 
 ## 1.2.1
 

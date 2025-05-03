@@ -30,7 +30,7 @@ Add to your pubspec.yaml file:
 
 ```yaml
 dependencies:
-  app_set_id: ^1.2.0
+  app_set_id: ^1.3.0
 ```
 
 Import the library and call `getIdentifer`:

@@ -1,5 +1,5 @@
 PODS:
-  - app_set_id (1.2.1):
+  - app_set_id (1.3.0):
     - Flutter
   - Flutter (1.0.0)
 
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: Flutter
 
 SPEC CHECKSUMS:
-  app_set_id: e0349a05a0ecc6d5c937d42869aa941f90801c9c
+  app_set_id: 0e0db3830db2bca1b67eecec1e2ab80b2bec48fa
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
 
 PODFILE CHECKSUM: c4c93c5f6502fe2754f48404d3594bf779584011
