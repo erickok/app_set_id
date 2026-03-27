@@ -1,3 +1,6 @@
+## 1.4.0
+* SPM support
+
 ## 1.3.0
 * Upgrade Android Gradle plugin and use declarative plugin application
 * Web WASM compilation support

@@ -10,7 +10,7 @@ A tiny Flutter library to retrieve a vendor-specific privacy-friendly device-uni
   s.author           = { 'Eric Kok' => 'eric@2312.nl' }
 
   s.source           = { :path => '.' }
-  s.source_files     = 'Classes/**/*'
+  s.source_files     = 'app_set_id/Sources/app_set_id/**/*'
   s.dependency 'FlutterMacOS'
 
   s.platform = :osx, '10.11'
