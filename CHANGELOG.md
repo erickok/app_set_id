@@ -1,3 +1,6 @@
+## 1.5.0
+* Migrates to built-in Kotlin (retaining pre-3.44 Flutter compatibility)
+
 ## 1.4.0
 * SPM support
 
