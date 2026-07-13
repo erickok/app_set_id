@@ -3,7 +3,7 @@ plugins {
 }
 
 group 'nl.u2312.app_set_id'
-version '1.2.2'
+version '1.5.1'
 
 def agpMajor = com.android.Version.ANDROID_GRADLE_PLUGIN_VERSION.tokenize('.')[0] as int
 if (agpMajor < 9) {
@@ -40,8 +40,12 @@ android {
     }
 }
 
-kotlin {
-    compilerOptions {
-        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8
+// The `kotlin {}` DSL is only available when the Kotlin Gradle plugin is applied.
+// Some newer Android Gradle Plugin versions can build Kotlin without KGP, so guard this.
+if (project.extensions.findByName('kotlin') != null) {
+    kotlin {
+        compilerOptions {
+            jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8
+        }
     }
 }
