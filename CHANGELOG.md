@@ -1,3 +1,7 @@
+## 1.5.2
+
+* Fix Kotlin compilation when consumers opt out of built-in Kotlin (`android.builtInKotlin=false`) on AGP 9+
+
 ## 1.5.0
 * Migrates to built-in Kotlin (retaining pre-3.44 Flutter compatibility)
 
