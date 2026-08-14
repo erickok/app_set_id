@@ -3,17 +3,7 @@ plugins {
 }
 
 group 'nl.u2312.app_set_id'
-version '1.5.1'
-
-// AGP 9+ has built-in Kotlin support unless Flutter opts out via android.builtInKotlin=false.
-def agpMajor = com.android.Version.ANDROID_GRADLE_PLUGIN_VERSION.tokenize('.')[0] as int
-def builtInKotlin = providers.gradleProperty("android.builtInKotlin")
-        .map { it.toBoolean() }
-        .orElse(agpMajor >= 9)
-        .get()
-if (agpMajor < 9 || !builtInKotlin) {
-    apply plugin: 'kotlin-android'
-}
+version '1.6.0'
 
 allprojects {
     repositories {
@@ -27,8 +17,8 @@ android {
     compileSdk 34
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
 
     sourceSets {
@@ -36,21 +26,16 @@ android {
     }
 
     defaultConfig {
-        minSdk 16
-    }
-
-    dependencies {
-        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7"
-        implementation 'com.google.android.gms:play-services-appset:16.0.2'
+        minSdk 24
     }
 }
 
-// The `kotlin {}` DSL is only available when the Kotlin Gradle plugin is applied.
-// Some newer Android Gradle Plugin versions can build Kotlin without KGP, so guard this.
-if (project.extensions.findByName('kotlin') != null) {
-    kotlin {
-        compilerOptions {
-            jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_1_8
-        }
+kotlin {
+    compilerOptions {
+        jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
     }
+}
+
+dependencies {
+    implementation 'com.google.android.gms:play-services-appset:16.0.2'
 }

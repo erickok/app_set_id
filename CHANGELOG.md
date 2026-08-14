@@ -1,3 +1,11 @@
+## 1.6.0
+
+* Updates the minimum supported SDK version to Flutter 3.44/Dart 3.12
+* Migrates to built-in Kotlin
+* Upgrade to Gradle 8.14 and Kotlin 2.3.20
+* Compile against Java 17 instead of Java 8
+* Raise the Android minimum SDK to 24, matching Flutter 3.44
+
 ## 1.5.2
 
 * Fix Kotlin compilation when consumers opt out of built-in Kotlin (`android.builtInKotlin=false`) on AGP 9+

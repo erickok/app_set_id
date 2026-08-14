@@ -4,7 +4,8 @@ description: Demonstrates how to use the app_set_id plugin.
 publish_to: 'none'
 
 environment:
-  sdk: '>=2.18.1 <3.0.0'
+  sdk: ^3.12.0
+  flutter: ">=3.44.0"
 
 dependencies:
   flutter:
