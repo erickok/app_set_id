@@ -1,20 +1,14 @@
 PODS:
-  - app_set_id (1.3.0):
-    - FlutterMacOS
   - FlutterMacOS (1.0.0)
 
 DEPENDENCIES:
-  - app_set_id (from `Flutter/ephemeral/.symlinks/plugins/app_set_id/macos`)
   - FlutterMacOS (from `Flutter/ephemeral`)
 
 EXTERNAL SOURCES:
-  app_set_id:
-    :path: Flutter/ephemeral/.symlinks/plugins/app_set_id/macos
   FlutterMacOS:
     :path: Flutter/ephemeral
 
 SPEC CHECKSUMS:
-  app_set_id: 0bc1f518413f1e551cc8ed30805d489980aa8ae1
   FlutterMacOS: d0db08ddef1a9af05a5ec4b724367152bb0500b1
 
 PODFILE CHECKSUM: 9ebaf0ce3d369aaa26a9ea0e159195ed94724cf3
