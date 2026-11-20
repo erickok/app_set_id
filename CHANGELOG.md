@@ -1,3 +1,7 @@
+## 1.6.1
+
+* Adds the `FlutterFramework` dependency to the iOS and macOS Swift packages, as required by Flutter's Swift Package Manager plugin migration guide (#13)
+
 ## 1.6.0
 
 * Updates the minimum supported SDK version to Flutter 3.44/Dart 3.12

@@ -11,11 +11,15 @@ let package = Package(
     products: [
         .library(name: "app-set-id", targets: ["app_set_id"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(name: "FlutterFramework", path: "../FlutterFramework"),
+    ],
     targets: [
         .target(
             name: "app_set_id",
-            dependencies: [],
+            dependencies: [
+                .product(name: "FlutterFramework", package: "FlutterFramework"),
+            ],
             resources: [
                 // If your plugin requires a privacy manifest, for example if it uses any required
                 // reason APIs, update the PrivacyInfo.xcprivacy file to describe your plugin's
